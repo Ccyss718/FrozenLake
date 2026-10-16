@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.test-tmp*/
+.matplotlib-cache/
+.idea/
+.vscode/
+
+# 训练生成物
+outputs/**/*.npy
+outputs/**/*.npz
+outputs/**/*.csv
+outputs/**/*.json
+outputs/**/*.png
+
+# GitHub README展示图
+!outputs/sarsa/8x8_slippery/linear_epsilon_1_to_0.01_over_40000/seed_42/curves/training_success_rate.png
+!outputs/comparisons/8x8_q_learning_vs_sarsa/linear_epsilon_1_to_0.01_over_40000/curves/evaluation_success_rate.png
+
+# 保留空目录
+!outputs/.gitkeep
